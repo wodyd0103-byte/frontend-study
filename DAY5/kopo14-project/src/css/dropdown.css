@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
+:root {
+  --navy: #2c3e50;
+  --blue: #4a90e2;
+  --blue-dark: #2266cc;
+  --bg: #eef1f5;
+  --surface: #ffffff;
+  --border: #e6e8eb;
+  --text: #2c3e50;
+  --muted: #9aa5b1;
+  --danger: #e25555;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 22vh; /* 메뉴가 아래로 펼쳐질 공간 확보 */
+  background:
+    radial-gradient(
+      circle at 50% -10%,
+      rgba(74, 144, 226, 0.1),
+      transparent 45%
+    ),
+    var(--bg);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* ── 토글 버튼 ── */
+#toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 170px;
+  padding: 12px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(44, 62, 80, 0.06);
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    transform 0.05s;
+}
+#toggle:hover {
+  border-color: #cfd6de;
+  box-shadow: 0 6px 18px rgba(44, 62, 80, 0.1);
+}
+#toggle:active {
+  transform: translateY(1px);
+}
+/* 메뉴가 열렸을 때 토글 강조 (:has 지원 브라우저) */
+.dropdown:has(.menu.open) #toggle {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+/* ── 메뉴 ── */
+.menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  list-style: none;
+  padding: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 16px 36px rgba(44, 62, 80, 0.16);
+  /* 애니메이션을 위해 display 대신 opacity/visibility 사용 */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px) scale(0.98);
+  transform-origin: top center;
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    visibility 0.18s;
+}
+.menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.menu li {
+  padding: 11px 14px;
+  border-radius: 8px;
+  font-size: 14.5px;
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    color 0.15s,
+    padding-left 0.15s;
+}
+.menu li:hover {
+  background: var(--bg);
+  color: var(--blue-dark);
+  padding-left: 18px; /* hover 시 살짝 들여쓰기 */
+}
+/* 마지막 항목(로그아웃) 구분선 + 위험 색 */
+.menu li:last-child {
+  margin-top: 4px;
+  border-top: 1px solid var(--border);
+  border-radius: 0 0 8px 8px;
+}
+.menu li:last-child:hover {
+  background: #fdecec;
+  color: var(--danger);
+}

@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f6fb;
+}
+
+.icon-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* 공통 버튼 스타일 - 아이콘 + 텍스트가 함께 들어가는 알약(pill) 모양 */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 999px;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: inherit;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+
+.icon-btn__label {
+  font-weight: 600;
+}
+
+/* 크기 변형 - 아이콘/글씨 크기, 여백, 간격을 함께 조절 */
+.icon-btn--small {
+  height: 40px;
+  padding: 0 18px;
+  gap: 6px;
+  font-size: 14px;
+}
+.icon-btn--medium {
+  height: 48px;
+  padding: 0 22px;
+  gap: 8px;
+  font-size: 16px;
+}
+.icon-btn--large {
+  height: 56px;
+  padding: 0 28px;
+  gap: 10px;
+  font-size: 18px;
+}
+
+/* 색상 변형 */
+.icon-btn--blue {
+  background-color: #4a90e2;
+}
+.icon-btn--green {
+  background-color: #2ecc71;
+}
+.icon-btn--orange {
+  background-color: #f5a623;
+}
+.icon-btn--purple {
+  background-color: #9b59b6;
+}
+.icon-btn--red {
+  background-color: #e74c3c;
+}
+
+/* hover 효과 (transition으로 부드럽게) */
+.icon-btn:hover {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
+}

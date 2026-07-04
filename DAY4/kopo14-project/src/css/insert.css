@@ -1,0 +1,46 @@
+:root {
+  --color-primary: #4a90e2;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 40px 16px;
+}
+.board {
+  max-width: 480px;
+  margin: 0 auto;
+}
+input,
+button {
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+}
+input {
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.btn-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+button {
+  width: 100%;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  cursor: pointer;
+}
+.card {
+  padding: 14px;
+  margin-top: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #f8f9fa;
+}

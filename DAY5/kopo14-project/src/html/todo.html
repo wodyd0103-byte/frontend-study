@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do</title>
+    <link rel="stylesheet" href="../css/todo.css" />
+    <script type="module" src="../js/MyHeader.js"></script>
+    <script type="module" src="../js/MyFooter.js"></script>
+  </head>
+  <body>
+    <my-header></my-header>
+    <div class="todo">
+      <div class="form">
+        <h1>할 일 목록</h1>
+        <input id="text" placeholder="할 일" />
+        <button id="add">추가</button>
+      </div>
+
+      <div class="status">
+        <span class="listcount">완료<span id="count">0</span></span> /
+        <span class="listcount">전체<span id="total">0</span></span>
+        <button id="clear">모두 삭제</button>
+        <button id="delete">완료 삭제</button>
+      </div>
+
+      <ul id="list" class="list"></ul>
+    </div>
+    <script src="../js/todo.js"></script>
+    <my-footer></my-footer>
+  </body>
+</html>

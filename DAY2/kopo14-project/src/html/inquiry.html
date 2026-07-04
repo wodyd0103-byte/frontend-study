@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문의하기</title>
+    <link rel="stylesheet" href="../css/inquiry.css" />
+  </head>
+  <body>
+    <form>
+      <h1>문의하기</h1>
+      <ul>
+        <li><label for="name">이름</label></li>
+        <li><input type="text" id="name" placeholder="이름을 입력하세요" /></li>
+        <li><label for="email">이메일</label></li>
+        <li>
+          <input type="email" id="email" placeholder="이메일을 입력하세요" />
+        </li>
+        <li><label for="inquiry-type">문의유형</label></li>
+        <li>
+          <select id="inquiry-type">
+            <option>일반문의</option>
+            <option>제휴문의</option>
+            <option>기타</option>
+          </select>
+        </li>
+        <li><label for="message">메시지</label></li>
+        <li>
+          <textarea
+            rows="4"
+            id="message"
+            placeholder="내용을 입력하세요"
+          ></textarea>
+        </li>
+        <button type="submit">보내기</button>
+      </ul>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+.sub {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+}
+
+.menu li:hover .sub {
+  opacity: 1;
+  visibility: visible;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+.navbar {
+  background: #2c3e50;
+}
+.menu {
+  list-style: none;
+  display: flex;
+}
+.menu > li {
+  position: relative; /*기준점*/
+}
+.menu > li > a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 20px;
+}
+
+.menu > li:hover > a {
+  background: #34495e;
+}
+.sub {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* 평소 투명 */
+  visibility: hidden; /* 숨김 */
+  transition: opacity 0.2s;
+}
+.menu li:hover .sub {
+  opacity: 1;
+  visibility: visible;
+}
+.sub li a:hover {
+  background: #f0f3f7;
+}

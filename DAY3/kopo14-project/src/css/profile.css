@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+.page-wrap {
+  min-height: 100vh;
+  padding: 40px 24px;
+}
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto; /* 가운데 정렬 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+.card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.card strong {
+  color: #4a90e2;
+}
+/* 이미지: 원형으로 */
+.card img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  object-fit: cover;
+}
+/* 링크: 버튼처럼 */
+.card a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  border-radius: 8px;
+}

@@ -1,0 +1,658 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+  background-color: #f9faff;
+  color: #1a1833;
+  line-height: 1.6;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 헤더 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: 64px;
+  background-color: rgba(249, 250, 255, 0.96);
+  border-bottom: 1px solid #dde1f2;
+  box-shadow: 0 1px 16px rgba(99, 102, 241, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+header h1 {
+  font-size: 22px;
+  font-weight: 900;
+  color: #6366f1;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+header nav ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5a607d;
+}
+
+/* 히어로 섹션 */
+body > section {
+  min-height: 100vh;
+  padding-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9faff;
+  background-image:
+    radial-gradient(
+      ellipse 60% 60% at 15% 50%,
+      rgba(99, 102, 241, 0.1) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 50% 50% at 85% 20%,
+      rgba(59, 130, 246, 0.07) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 40% 40% at 50% 90%,
+      rgba(16, 185, 129, 0.05) 0%,
+      transparent 60%
+    );
+}
+body > section > div {
+  max-width: 780px;
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+body > section span {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6366f1;
+  padding: 6px 16px;
+  border: 1px solid #6366f1;
+  border-radius: 100px;
+}
+body > section h1 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+body > section h1 strong {
+  color: #6366f1;
+}
+body > section p {
+  font-size: 16px;
+  color: #5a607d;
+  max-width: 560px;
+  line-height: 1.85;
+}
+
+/* 메인 섹션 공통 */
+main > section {
+  padding: 80px 20px;
+}
+
+/* 게임 섹션 */
+#games {
+  background-color: #f9faff;
+}
+#games > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#games > div > div:first-child {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+#games > div > div:first-child > div {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6366f1;
+}
+#games > div > div:first-child h2 {
+  font-size: 28px;
+  font-weight: 800;
+}
+#games > div > div:first-child p {
+  font-size: 14px;
+  color: #5a607d;
+}
+
+/* 게임 카드 그리드 - 기본 1열 */
+#games > div > div:last-child {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+#games article {
+  background-color: white;
+  border: 1px solid #dde1f2;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 16px rgba(99, 102, 241, 0.07);
+}
+#games article img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+#games article > div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+#games article > div > div {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6366f1;
+}
+#games article h3 {
+  font-size: 17px;
+  font-weight: 700;
+}
+#games article p {
+  font-size: 13px;
+  color: #5a607d;
+  line-height: 1.75;
+}
+
+/* 회사 소개 섹션 */
+#intro {
+  background-color: #f0f2fb;
+}
+#intro > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+/* 텍스트 블록 */
+#intro > div > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#intro > div > div:nth-child(1) h2 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+#intro > div > div:nth-child(1) p {
+  font-size: 14px;
+  color: #5a607d;
+  line-height: 1.85;
+}
+
+/* 스탯 카드 공통 */
+#intro > div > div:nth-child(2),
+#intro > div > div:nth-child(3),
+#intro > div > div:nth-child(4) {
+  background-color: white;
+  border: 1px solid #dde1f2;
+  border-radius: 12px;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
+  box-shadow: 0 2px 16px rgba(99, 102, 241, 0.07);
+}
+
+/* 스탯 카드 포인트 컬러 */
+#intro > div > div:nth-child(2) {
+  border-top: 3px solid #6366f1;
+}
+#intro > div > div:nth-child(3) {
+  border-top: 3px solid #3b82f6;
+}
+#intro > div > div:nth-child(4) {
+  border-top: 3px solid #10b981;
+}
+#intro > div > div:nth-child(2) h1,
+#intro > div > div:nth-child(3) h1,
+#intro > div > div:nth-child(4) h1 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1;
+}
+#intro > div > div:nth-child(2) h1 strong {
+  color: #6366f1;
+}
+#intro > div > div:nth-child(3) h1 strong {
+  color: #3b82f6;
+}
+#intro > div > div:nth-child(4) h1 strong {
+  color: #10b981;
+}
+#intro > div > div:nth-child(2) > div,
+#intro > div > div:nth-child(3) > div,
+#intro > div > div:nth-child(4) > div {
+  font-size: 12px;
+  color: #5a607d;
+}
+
+/* 타임라인 - 기본 1열 */
+#intro > div > ul {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  border-top: 1px solid #dde1f2;
+  padding-top: 32px;
+}
+#intro > div > ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 16px;
+  border-left: 2px solid #6366f1;
+}
+#intro > div > ul li span:first-child {
+  font-size: 13px;
+  font-weight: 800;
+  color: #6366f1;
+}
+#intro > div > ul li span:last-child {
+  font-size: 12px;
+  color: #5a607d;
+  line-height: 1.55;
+}
+
+/* 핵심 가치 섹션 */
+#value {
+  background-color: #f9faff;
+}
+#value > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#value > div > div:first-child {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+#value > div > div:first-child > div {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6366f1;
+}
+#value > div > div:first-child h2 {
+  font-size: 28px;
+  font-weight: 800;
+}
+#value > div > div:first-child p {
+  font-size: 14px;
+  color: #5a607d;
+}
+
+/* 가치 카드 - 기본 1열 */
+#value > div > div:last-child {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+#value article {
+  background-color: white;
+  border: 1px solid #dde1f2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(99, 102, 241, 0.07);
+}
+
+/* 카드별 상단 포인트 컬러 */
+#value > div > div:last-child article:nth-child(1) {
+  border-top: 3px solid #6366f1;
+}
+#value > div > div:last-child article:nth-child(2) {
+  border-top: 3px solid #3b82f6;
+}
+#value > div > div:last-child article:nth-child(3) {
+  border-top: 3px solid #10b981;
+}
+#value article > div {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* VALUE 레이블 색상 */
+#value > div > div:last-child article:nth-child(1) > div > div {
+  color: #6366f1;
+}
+#value > div > div:last-child article:nth-child(2) > div > div {
+  color: #3b82f6;
+}
+#value > div > div:last-child article:nth-child(3) > div > div {
+  color: #10b981;
+}
+#value article > div > div {
+  font-size: 11px;
+  font-weight: 700;
+}
+#value article h3 {
+  font-size: 22px;
+  font-weight: 800;
+}
+#value article p {
+  font-size: 14px;
+  color: #5a607d;
+  line-height: 1.8;
+}
+
+/* 푸터 */
+footer {
+  background-color: #1e1b4b;
+  padding: 64px 20px 40px;
+  color: #e8eaf6;
+}
+footer > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* 브랜드 + 폼 - 기본 1열 */
+footer > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+footer > div > div:first-child > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 로고 */
+footer > div > div:first-child > div:first-child > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 900;
+}
+footer > div > div:first-child > div:first-child > div > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #6366f1;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+  border-radius: 6px;
+}
+footer > div > div:first-child > div:first-child > p {
+  font-size: 14px;
+  color: #9fa8da;
+  line-height: 1.85;
+}
+
+/* 문의 폼 */
+footer > div > div:first-child > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer h4 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #7986cb;
+}
+footer form h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+footer form ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 20px;
+}
+footer form ul li:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+footer form ul li:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+footer form ul li:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1;
+}
+footer form ul li:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+footer form ul li:nth-child(5) {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  padding-top: 8px;
+}
+footer form ul li:nth-child(6) {
+  grid-column: 1 / -1;
+  grid-row: 4;
+}
+footer form ul li:nth-child(7) {
+  grid-column: 1 / -1;
+  grid-row: 5;
+  padding-top: 8px;
+}
+footer form ul li:nth-child(8) {
+  grid-column: 1 / -1;
+  grid-row: 6;
+}
+footer form ul button {
+  grid-column: 1 / -1;
+  grid-row: 7;
+}
+footer label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #9fa8da;
+  margin-bottom: 4px;
+}
+footer input,
+footer select,
+footer textarea {
+  width: 100%;
+  background-color: #2d2a5e;
+  border: 1px solid #3730a3;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #e8eaf6;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+footer textarea {
+  resize: none;
+}
+footer button[type="submit"] {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* 저작권 */
+footer > div > div:last-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 24px;
+  text-align: center;
+  font-size: 12px;
+  color: #7986cb;
+}
+
+/* 반응형 - 모바일 우선 */
+
+/* 소형 태블릿 이상 */
+@media (min-width: 640px) {
+  header {
+    padding: 0 28px;
+  }
+  /* 게임 카드 2열 */
+  #games > div > div:last-child {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* 스탯 카드 3열 */
+  #intro > div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #intro > div > div:nth-child(1) {
+    grid-column: 1 / -1;
+  }
+  #intro > div > div:nth-child(2) {
+    grid-column: 1;
+  }
+  #intro > div > div:nth-child(3) {
+    grid-column: 2;
+  }
+  #intro > div > div:nth-child(4) {
+    grid-column: 3;
+  }
+  /* 가치 카드 2열 */
+  #value > div > div:last-child {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 태블릿 이상 */
+@media (min-width: 768px) {
+  main > section {
+    padding: 80px 28px;
+  }
+  /* 타임라인 3열 */
+  #intro > div > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body > section h1 {
+    font-size: 44px;
+  }
+  #games > div > div:first-child h2 {
+    font-size: 32px;
+  }
+  #value > div > div:first-child h2 {
+    font-size: 32px;
+  }
+  #intro > div > div:nth-child(1) h2 {
+    font-size: 28px;
+  }
+}
+
+/* 데스크톱 이상 */
+@media (min-width: 1024px) {
+  header {
+    padding: 0 40px;
+  }
+  header nav ul {
+    gap: 40px;
+  }
+  main > section {
+    padding: 96px 40px;
+  }
+  /* 게임 카드 4열 */
+  #games > div > div:last-child {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* 인트로 텍스트 + 스탯 4열 */
+  #intro > div {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    align-items: start;
+  }
+  #intro > div > div:nth-child(1) {
+    grid-column: 1;
+  }
+  #intro > div > div:nth-child(2) {
+    grid-column: 2;
+  }
+  #intro > div > div:nth-child(3) {
+    grid-column: 3;
+  }
+  #intro > div > div:nth-child(4) {
+    grid-column: 4;
+  }
+  /* 타임라인 5열 */
+  #intro > div > ul {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  /* 가치 카드 3열 */
+  #value > div > div:last-child {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* 푸터 2열 */
+  footer > div > div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+  footer {
+    padding: 64px 40px 40px;
+  }
+  body > section h1 {
+    font-size: 52px;
+  }
+}

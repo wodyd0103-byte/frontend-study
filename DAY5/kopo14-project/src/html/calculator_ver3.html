@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>윈도우 계산기</title>
+    <link rel="stylesheet" href="../css/calculator_ver3.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <table>
+        <tr>
+          <td colspan="4">
+            <div class="screen">
+              <output id="display"></output>
+              <input id="result" type="text" readonly />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="calcBtn num" data-value="7">7</button></td>
+          <td><button class="calcBtn num" data-value="8">8</button></td>
+          <td><button class="calcBtn num" data-value="9">9</button></td>
+          <td><button class="calcBtn op" data-value="÷">÷</button></td>
+        </tr>
+        <tr>
+          <td><button class="calcBtn num" data-value="4">4</button></td>
+          <td><button class="calcBtn num" data-value="5">5</button></td>
+          <td><button class="calcBtn num" data-value="6">6</button></td>
+          <td><button class="calcBtn op" data-value="x">x</button></td>
+        </tr>
+        <tr>
+          <td><button class="calcBtn num" data-value="1">1</button></td>
+          <td><button class="calcBtn num" data-value="2">2</button></td>
+          <td><button class="calcBtn num" data-value="3">3</button></td>
+          <td><button class="calcBtn op" data-value="-">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="calcBtn num" data-value="0">0</button></td>
+          <td><button class="calcBtn func" data-value="C">C</button></td>
+          <td><button class="calcBtn func" data-value="=">=</button></td>
+          <td><button class="calcBtn op" data-value="+">+</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="../js/calculator_ver3.js"></script>
+  </body>
+</html>

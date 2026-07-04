@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>계산기</title>
+    <link rel="stylesheet" href="../css/calculator.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>계산기</h1>
+      <div class="inputs">
+        <input id="num1" type="number" />
+        <select id="operator">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <input id="num2" type="number" />
+      </div>
+      <button id="calcBtn">계산하기</button>
+      <p id="result">...</p>
+    </div>
+    <script src="../js/calculator.js"></script>
+  </body>
+</html>

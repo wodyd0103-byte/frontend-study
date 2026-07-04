@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+
+:root {
+  --navy: #2c3e50;
+  --blue: #4a90e2;
+  --blue-dark: #2266cc;
+  --bg: #eef1f5;
+  --surface: #ffffff;
+  --border: #e6e8eb;
+  --text: #2c3e50;
+  --muted: #9aa5b1;
+  --danger: #e25555;
+  --success: #22b07a;
+  --radius: 14px;
+  --shadow: 0 12px 32px rgba(44, 62, 80, 0.08);
+  --header-h: 60px;
+  --footer-h: 48px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--header-h) + 28px) 20px calc(var(--footer-h) + 28px);
+  background:
+    radial-gradient(
+      circle at 18% 0%,
+      rgba(74, 144, 226, 0.07),
+      transparent 42%
+    ),
+    var(--bg);
+}
+
+/* ── 공통 헤더 (my-header 컴포넌트) ── */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-h);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 24px;
+  background: var(--navy);
+  color: #fff;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.12);
+}
+header h1 {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+header nav {
+  display: flex;
+  gap: 4px;
+}
+header nav a {
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  font-size: 14px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+header nav a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+/* ── 공통 푸터 (my-footer 컴포넌트) ── */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--footer-h);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 12.5px;
+}
+
+/* ── 투두 카드 ── */
+.todo {
+  width: 100%;
+  max-width: 520px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 26px;
+  animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ── 입력 폼 ── */
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+}
+.form h1 {
+  grid-column: 1 / -1;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+#text {
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--text);
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+#text::placeholder {
+  color: var(--muted);
+}
+#text:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+#add {
+  height: 46px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 10px;
+  background: var(--blue);
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.05s;
+}
+#add:hover {
+  background: var(--blue-dark);
+}
+#add:active {
+  transform: translateY(1px);
+}
+
+/* ── 상태 바 ── */
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 18px 0 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.listcount {
+  font-weight: 500;
+}
+.listcount #count,
+.listcount #total {
+  display: inline-block;
+  min-width: 22px;
+  margin-left: 5px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--navy);
+  font-weight: 700;
+  text-align: center;
+}
+.listcount #count {
+  color: var(--success);
+}
+.status button {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 12.5px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    background 0.2s;
+}
+#clear {
+  margin-left: auto; /* 버튼 그룹을 오른쪽으로 밀기 */
+}
+.status button:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+  background: #fdecec;
+}
+
+/* ── 리스트 ── */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 42vh;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.list::-webkit-scrollbar {
+  width: 6px;
+}
+.list::-webkit-scrollbar-thumb {
+  background: #d5dbe2;
+  border-radius: 3px;
+}
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 15px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: #fff;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    background 0.2s,
+    transform 0.05s;
+  animation: itemIn 0.25s ease both;
+}
+@keyframes itemIn {
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.list li:hover {
+  border-color: #cfd6de;
+  background: #fafbfc;
+}
+.list li:active {
+  transform: scale(0.995);
+}
+
+/* 체크 원형 표시 (빈 상태 제외) */
+.list li:not(.empty)::before {
+  content: "";
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cfd6de;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  transition: all 0.2s;
+}
+.list li .label {
+  flex: 1;
+  font-size: 15px;
+  word-break: break-all;
+}
+
+/* 완료 상태 */
+.list li.done {
+  background: #f5faf7;
+  border-color: #d5ece0;
+}
+.list li.done::before {
+  background-color: var(--success);
+  border-color: var(--success);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+}
+.list li.done .label {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+/* 삭제 버튼 */
+.del {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.del:hover {
+  background: #fdecec;
+  color: var(--danger);
+}
+
+/* 빈 상태 */
+.list li.empty {
+  justify-content: center;
+  border-style: dashed;
+  background: transparent;
+  color: var(--muted);
+  font-size: 14px;
+  cursor: default;
+}
+.list li.empty:hover {
+  border-color: var(--border);
+  background: transparent;
+}
