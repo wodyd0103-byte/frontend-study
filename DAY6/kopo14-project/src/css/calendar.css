@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 16px;
+  background-color: #f0f2f5;
+}
+.calendar {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 100%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+.days div {
+  padding: 10px;
+  border-radius: 8px;
+}
+.days div:hover {
+  background-color: #eef3fb;
+}
