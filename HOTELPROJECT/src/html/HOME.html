@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kopo14 Hotel Project</title>
+    <script type="module" src="../js/Header.js"></script>
+    <script type="module" src="../js/Footer.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper.css" />
+  </head>
+  <header>
+    <my-header></my-header>
+  </header>
+  <body>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../images/home1.jpg" alt="home1" />
+          <div class="slide-text">
+            <h2>SWEET MOMENT</h2>
+            <a href="" class="slide-btn"> SEEMORE </a>
+          </div>
+        </div>
+        <div class="swiper-slide" img="../images/home2.jpg">
+          <img src="../images/home2.jpg" alt="home2" />
+          <div class="slide-text">
+            <h2>SWEET MOMENT</h2>
+            <a href="" class="slide-btn"> SEEMORE </a>
+          </div>
+        </div>
+        <div class="swiper-slide" img="../images/home3.jpg">
+          <img src="../images/home3.jpg" alt="home3" />
+          <div class="slide-text">
+            <h2>SWEET MOMENT</h2>
+            <a href="" class="slide-btn"> SEEMORE </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: { el: ".swiper-pagination", clickable: true },
+        autoplay: { delay: 2000, disableOnInteraction: false },
+      });
+    </script>
+  </body>
+  <footer>
+    <my-footer></my-footer>
+  </footer>
+</html>
