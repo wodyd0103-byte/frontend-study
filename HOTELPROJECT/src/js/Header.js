@@ -7,7 +7,7 @@ const menus = [
     ],
   },
   {
-    title: "ROOM",
+    title: "ROOMS",
     items: [
       { text: "ROOM1", href: "" },
       { text: "ROOM2", href: "" },
@@ -46,6 +46,30 @@ class MyHeader extends HTMLElement {
 
     const nav = document.createElement("nav");
 
+    // mobile: hover dropdowns don't work on touch, so this shared panel
+    // shows a menu's items as a plain row under the nav bar instead. It
+    // starts pre-filled with the current page's own section (no tap
+    // needed), and tapping ANY top-level item (ABOUT/ROOMS/RESERVATION/
+    // COMMUNITY) swaps it to that menu — so every section stays reachable
+    // no matter which page you're on. Lives inside `header` (not as a
+    // sibling) so it scrolls together with the sticky header.
+    const subnav = document.createElement("nav");
+    subnav.className = "mobile-subnav";
+
+    function fillSubnav(menuData, activeHref) {
+      subnav.innerHTML = "";
+      menuData.items.forEach((item) => {
+        const a = document.createElement("a");
+        a.href = item.href || "#";
+        a.textContent = item.text;
+        if (item.href && item.href === activeHref) a.classList.add("active");
+        subnav.appendChild(a);
+      });
+      subnav.classList.add("open");
+      // header grows to fit the extra row (90px -> 120px on mobile, see CSS)
+      header.classList.add("subnav-open");
+    }
+
     menus.forEach((menuData) => {
       const menu = document.createElement("div");
       menu.className = "menu";
@@ -64,11 +88,28 @@ class MyHeader extends HTMLElement {
         submenu.appendChild(a);
       });
 
+      title.addEventListener("click", (e) => {
+        e.preventDefault();
+        fillSubnav(menuData, null);
+      });
+
       menu.append(title, submenu);
       nav.appendChild(menu);
     });
 
-    header.append(h1, nav);
+    const page = location.pathname.split("/").pop() || "";
+    const activeMenu = menus.find((m) => page.toUpperCase().startsWith(m.title));
+    if (activeMenu) {
+      const activeHref =
+        activeMenu.title === "RESERVATION"
+          ? page.toUpperCase().startsWith("RESERVATION1")
+            ? "RESERVATION1.html"
+            : "RESERVATION2.html"
+          : null;
+      fillSubnav(activeMenu, activeHref);
+    }
+
+    header.append(h1, nav, subnav);
     this.appendChild(header);
   }
 }

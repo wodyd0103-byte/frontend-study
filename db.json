@@ -53,7 +53,12 @@
       "capacity": 2,
       "min": 2,
       "is_liked": false,
-      "images": ["room7.jpg", "room2.jpg", "room1.jpg", "sm_room_5.jpg"],
+      "images": [
+        "room1.jpg",
+        "room2.jpg",
+        "room7.png",
+        "sm_room_5.png"
+      ],
       "desc": "편안하고 아늑한 기본 객실로, 비즈니스나 여행의 피로를 풀기에 적합한 공간입니다. 킹사이즈 침대와 기본적인 편의시설이 갖춰져 있습니다.",
       "desc_eng": "A comfortable and cozy basic room, ideal for relaxing after a day of business or travel. It features a king-sized bed and essential amenities."
     },
@@ -66,11 +71,11 @@
       "min": 2,
       "is_liked": false,
       "images": [
-        "room4.jpg",
         "room3.jpg",
-        "sm_room_2.jpg",
-        "sm_room_3.jpg",
-        "sm_room_6.jpg"
+        "room4.jpg",
+        "sm_room_2.png",
+        "sm_room_3.png",
+        "sm_room_6.png"
       ],
       "desc": "넓고 현대적인 디자인의 객실로, 고급스러운 침대와 최신 시설이 마련되어 있어 편안한 휴식을 제공합니다.",
       "desc_eng": "A spacious and modernly designed room with luxurious bedding and the latest facilities, ensuring a comfortable and relaxing stay."
@@ -83,7 +88,10 @@
       "capacity": 4,
       "min": 2,
       "is_liked": false,
-      "images": ["room6.jpg", "sm_room_1.jpg"],
+      "images": [
+        "room6.png",
+        "sm_room_1.png"
+      ],
       "desc": "세련된 인테리어와 고급스러운 가구들이 특징인 객실로, 고급스러운 분위기 속에서 여유로운 휴식을 즐길 수 있습니다.",
       "desc_eng": "A stylishly furnished room with elegant interiors and premium furniture, offering a luxurious atmosphere for a more relaxed and indulgent stay."
     },
@@ -95,7 +103,10 @@
       "capacity": 6,
       "min": 4,
       "is_liked": false,
-      "images": ["room5.jpg", "sm_room_4.jpg"],
+      "images": [
+        "room5.jpg",
+        "sm_room_4.png"
+      ],
       "desc": "넓고 세련된 공간으로, 독립된 거실과 침실이 구분되어 있어 프라이버시와 편안함을 동시에 제공합니다. 고급스러운 어메니티와 서비스가 제공됩니다.",
       "desc_eng": "A spacious and sophisticated room with a separate living area and bedroom, offering both privacy and comfort. Premium amenities and services are included."
     }
@@ -522,6 +533,226 @@
       "number_of_guests": 2,
       "customer_name": "오예린",
       "phone_number": "01099900011"
+    },
+    {
+      "room_id": 4,
+      "customer_name": "123",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-08-28",
+      "check_out_date": "2026-08-31",
+      "number_of_guests": 4,
+      "total_price": 920000,
+      "id": 25
+    },
+    {
+      "room_id": 3,
+      "customer_name": "ddd",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-11-19",
+      "check_out_date": "2026-11-20",
+      "number_of_guests": 2,
+      "total_price": 200000,
+      "id": 26
+    },
+    {
+      "room_id": 1,
+      "customer_name": "123",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-07-06",
+      "check_out_date": "2026-07-08",
+      "number_of_guests": 2,
+      "total_price": 360000,
+      "id": 27
+    },
+    {
+      "room_id": 1,
+      "customer_name": "테스트예약자",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-07-15",
+      "check_out_date": "2026-07-17",
+      "number_of_guests": 2,
+      "total_price": 150000,
+      "id": 28
+    },
+    {
+      "room_id": 1,
+      "customer_name": "테스트예약자",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-07-15",
+      "check_out_date": "2026-07-17",
+      "number_of_guests": 2,
+      "total_price": 150000,
+      "id": 29
+    },
+    {
+      "room_id": 1,
+      "customer_name": "테스트예약자",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-07-15",
+      "check_out_date": "2026-07-17",
+      "number_of_guests": 2,
+      "total_price": 150000,
+      "id": 30
+    },
+    {
+      "room_id": 1,
+      "customer_name": "테스트예약자",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-07-15",
+      "check_out_date": "2026-07-17",
+      "number_of_guests": 2,
+      "total_price": 150000,
+      "id": 31
+    },
+    {
+      "room_id": 1,
+      "customer_name": "테스트예약자",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-07-15",
+      "check_out_date": "2026-07-17",
+      "number_of_guests": 2,
+      "total_price": 150000,
+      "id": 32
+    },
+    {
+      "room_id": 1,
+      "customer_name": "테스트예약자",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-07-15",
+      "check_out_date": "2026-07-17",
+      "number_of_guests": 2,
+      "total_price": 150000,
+      "id": 33
+    },
+    {
+      "room_id": 1,
+      "customer_name": "123",
+      "phone_number": "010123456789",
+      "check_in_date": "2026-07-06",
+      "check_out_date": "2026-07-08",
+      "number_of_guests": 2,
+      "total_price": 360000,
+      "id": 34
+    },
+    {
+      "room_id": 1,
+      "customer_name": "132",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-07-06",
+      "check_out_date": "2026-07-08",
+      "number_of_guests": 2,
+      "total_price": 360000,
+      "id": 35
+    },
+    {
+      "room_id": 1,
+      "customer_name": "123",
+      "phone_number": "01032625875",
+      "check_in_date": "2026-07-06",
+      "check_out_date": "2026-07-08",
+      "number_of_guests": 2,
+      "total_price": 360000,
+      "id": 36
+    },
+    {
+      "room_id": 1,
+      "customer_name": "1235",
+      "phone_number": "01032625875",
+      "check_in_date": "2026-07-06",
+      "check_out_date": "2026-07-08",
+      "number_of_guests": 2,
+      "total_price": 360000,
+      "id": 37
+    },
+    {
+      "room_id": 1,
+      "customer_name": "13254",
+      "phone_number": "010456789142",
+      "check_in_date": "2026-07-27",
+      "check_out_date": "2026-07-28",
+      "number_of_guests": 2,
+      "total_price": 180000,
+      "id": 38
+    },
+    {
+      "room_id": 1,
+      "customer_name": "134",
+      "phone_number": "12345678123",
+      "check_in_date": "2026-07-27",
+      "check_out_date": "2026-07-28",
+      "number_of_guests": 2,
+      "total_price": 180000,
+      "id": 39
+    },
+    {
+      "room_id": 1,
+      "customer_name": "테스트예약자",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-07-15",
+      "check_out_date": "2026-07-17",
+      "number_of_guests": 2,
+      "total_price": 150000,
+      "id": 40
+    },
+    {
+      "room_id": 1,
+      "customer_name": "1234",
+      "phone_number": "12345678123",
+      "check_in_date": "2026-07-27",
+      "check_out_date": "2026-07-28",
+      "number_of_guests": 2,
+      "total_price": 180000,
+      "id": 41
+    },
+    {
+      "room_id": 1,
+      "customer_name": "1234",
+      "phone_number": "12345678123",
+      "check_in_date": "2026-07-27",
+      "check_out_date": "2026-07-28",
+      "number_of_guests": 2,
+      "total_price": 180000,
+      "id": 42
+    },
+    {
+      "room_id": 1,
+      "customer_name": "213",
+      "phone_number": "12312341234",
+      "check_in_date": "2026-07-27",
+      "check_out_date": "2026-07-28",
+      "number_of_guests": 2,
+      "total_price": 180000,
+      "id": 43
+    },
+    {
+      "room_id": 1,
+      "customer_name": "123",
+      "phone_number": "12341234123",
+      "check_in_date": "2026-07-28",
+      "check_out_date": "2026-07-29",
+      "number_of_guests": 2,
+      "total_price": 180000,
+      "id": 44
+    },
+    {
+      "room_id": 1,
+      "customer_name": "ㅁㄴㅇ",
+      "phone_number": "01012345678",
+      "check_in_date": "2026-07-31",
+      "check_out_date": "2026-08-03",
+      "number_of_guests": 2,
+      "total_price": 580000,
+      "id": 45
+    },
+    {
+      "room_id": 1,
+      "customer_name": "123",
+      "phone_number": "12341234123",
+      "check_in_date": "2026-07-15",
+      "check_out_date": "2026-07-17",
+      "number_of_guests": 2,
+      "total_price": 150000,
+      "id": 46
     }
   ]
 }
