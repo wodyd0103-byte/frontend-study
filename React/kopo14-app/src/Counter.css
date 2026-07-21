@@ -1,0 +1,16 @@
+.counter {
+  text-align: center;
+  padding: 40px;
+}
+
+.count {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}

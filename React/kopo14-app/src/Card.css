@@ -1,0 +1,17 @@
+.card-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 24px;
+}
+.card {
+  width: 220px;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.card .level {
+  color: #e67e22;
+  font-weight: bold;
+}

@@ -1,0 +1,27 @@
+.todo {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+}
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+.input-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.input-row button {
+  padding: 10px 16px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.todo li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
