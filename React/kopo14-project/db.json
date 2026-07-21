@@ -1,0 +1,985 @@
+{
+  "categories": [
+    "한식",
+    "일식",
+    "이자카야",
+    "카페",
+    "고깃집",
+    "중식",
+    "양식"
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "옥된장 서현점",
+      "category": "한식",
+      "description": "수육전골과 된장찌개를 함께 즐길 수 있는 한식당. 웨이팅이 잦은 인기 맛집",
+      "address": "경기 성남시 분당구 황새울로335번길 5 105-1호",
+      "location": {
+        "lat": 37.3857684,
+        "lng": 127.1218066
+      },
+      "rating": 4.9,
+      "reviewCount": 206,
+      "priceLevel": null,
+      "phone": "010-7424-7522",
+      "hours": null,
+      "image": "https://picsum.photos/seed/restaurant1/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 2,
+      "name": "호랑이굴 서현점",
+      "category": "이자카야",
+      "description": "일본식 모츠나베(곱창전골)를 전문으로 하는 이자카야",
+      "address": "경기 성남시 분당구 서현로 204",
+      "location": {
+        "lat": 37.3869638,
+        "lng": 127.1249669
+      },
+      "rating": 4.9,
+      "reviewCount": 31,
+      "priceLevel": null,
+      "phone": "0507-1322-5589",
+      "hours": "매일 11:30-24:00",
+      "image": "https://picsum.photos/seed/restaurant2/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 3,
+      "name": "노아노아",
+      "category": "한식",
+      "description": "가정식 백반 스타일의 한식을 내는 점심 전문 식당",
+      "address": "경기 성남시 분당구 서현1동 84-8",
+      "location": {
+        "lat": 37.3857818,
+        "lng": 127.1285711
+      },
+      "rating": 4.4,
+      "reviewCount": 127,
+      "priceLevel": null,
+      "phone": "031-706-9181",
+      "hours": "매일 10:30-15:00",
+      "image": "https://picsum.photos/seed/restaurant3/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 4,
+      "name": "고미고미",
+      "category": "한식",
+      "description": "콩국수와 돌솥비빔밥이 인기인 가성비 한식당",
+      "address": "경기 성남시 분당구 중앙공원로31번길 42",
+      "location": {
+        "lat": 37.3833381,
+        "lng": 127.1253465
+      },
+      "rating": 4.1,
+      "reviewCount": 269,
+      "priceLevel": null,
+      "phone": "031-707-8655",
+      "hours": "매일 11:00-22:00",
+      "image": "https://picsum.photos/seed/restaurant4/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 5,
+      "name": "면식당 분당서현점",
+      "category": "일식",
+      "description": "돈코츠라멘과 수제 돈카츠를 함께 파는 일식 면요리 전문점",
+      "address": "경기 성남시 분당구 서현로210번길 14 202호",
+      "location": {
+        "lat": 37.3862428,
+        "lng": 127.1245659
+      },
+      "rating": 4.9,
+      "reviewCount": 51,
+      "priceLevel": null,
+      "phone": "0507-1459-1293",
+      "hours": "매일 11:00-23:00",
+      "image": "https://picsum.photos/seed/restaurant5/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 6,
+      "name": "상무초밥 분당서현점",
+      "category": "일식",
+      "description": "합리적인 가격의 스시와 런치세트로 잘 알려진 일식당",
+      "address": "경기 성남시 분당구 서현동 황새울로 250-1",
+      "location": {
+        "lat": 37.3865184,
+        "lng": 127.1234234
+      },
+      "rating": 4.4,
+      "reviewCount": 261,
+      "priceLevel": null,
+      "phone": "031-781-0077",
+      "hours": "매일 10:50-21:20",
+      "image": "https://picsum.photos/seed/restaurant6/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 7,
+      "name": "슬로웨이 커피 분당서현점",
+      "category": "카페",
+      "description": "24시간 운영하는 대형 디저트 카페",
+      "address": "경기 성남시 분당구 서현로 247",
+      "location": {
+        "lat": 37.3847137,
+        "lng": 127.1291049
+      },
+      "rating": 5,
+      "reviewCount": 155,
+      "priceLevel": null,
+      "phone": null,
+      "hours": "24시간 연중무휴",
+      "image": "https://picsum.photos/seed/restaurant7/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 8,
+      "name": "어반스피릿",
+      "category": "카페",
+      "description": "넓은 좌석과 트렌디한 인테리어를 갖춘 대형 카페",
+      "address": "경기 성남시 분당구 서현동 황새울로 315 대현빌딩 205호",
+      "location": {
+        "lat": 37.3846856,
+        "lng": 127.1203214
+      },
+      "rating": 4.2,
+      "reviewCount": 300,
+      "priceLevel": 2,
+      "phone": "031-709-2288",
+      "hours": "월-토 11:30-23:00, 일 11:30-22:00",
+      "image": "https://picsum.photos/seed/restaurant8/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 9,
+      "name": "Rendez-vous",
+      "category": "카페",
+      "description": "반려견 동반이 가능한 디저트·브런치 카페",
+      "address": "경기 성남시 분당구 서현동",
+      "location": {
+        "lat": 37.3858489,
+        "lng": 127.1259242
+      },
+      "rating": 4.4,
+      "reviewCount": 87,
+      "priceLevel": null,
+      "phone": "031-709-3740",
+      "hours": "매일 11:00-23:00",
+      "image": "https://picsum.photos/seed/restaurant9/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 10,
+      "name": "그리든, 고기 서현점",
+      "category": "고깃집",
+      "description": "프라이빗룸 위주로 구성된 삼겹살·목살 전문 고깃집",
+      "address": "경기 성남시 분당구 황새울로 325 서현하우비 2층 206·207호",
+      "location": {
+        "lat": 37.3855622,
+        "lng": 127.121412
+      },
+      "rating": 4.2,
+      "reviewCount": 12,
+      "priceLevel": null,
+      "phone": "031-708-9444",
+      "hours": "월-토 16:00-23:00 (일요일 휴무)",
+      "image": "https://picsum.photos/seed/restaurant10/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 11,
+      "name": "서현실비",
+      "category": "고깃집",
+      "description": "젓갈 소스와 곁들이는 한우 고기로 유명한 대형 고깃집",
+      "address": "경기 성남시 분당구 황새울로311번길 14",
+      "location": {
+        "lat": 37.3855207,
+        "lng": 127.1196832
+      },
+      "rating": 4.2,
+      "reviewCount": 1159,
+      "priceLevel": 2,
+      "phone": "031-8016-0624",
+      "hours": "매일 11:30-02:00",
+      "image": "https://picsum.photos/seed/restaurant11/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 12,
+      "name": "Doadeul",
+      "category": "고깃집",
+      "description": "정육점에서 직접 운영하는 신선한 고기 전문 식당",
+      "address": "경기 성남시 분당구 분당로53번길 15",
+      "location": {
+        "lat": 37.3843672,
+        "lng": 127.1219523
+      },
+      "rating": 4.8,
+      "reviewCount": 10,
+      "priceLevel": null,
+      "phone": "031-705-2024",
+      "hours": "월-금 11:00-22:00, 토-일 16:00-22:00",
+      "image": "https://picsum.photos/seed/restaurant12/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 13,
+      "name": "Jung Hwa Il Sang",
+      "category": "중식",
+      "description": "옛날식 짜장면과 해물짬뽕을 선보이는 동네 중식당",
+      "address": "경기 성남시 분당구 황새울로 315 대현빌딩 1층",
+      "location": {
+        "lat": 37.3849484,
+        "lng": 127.1205163
+      },
+      "rating": 4.3,
+      "reviewCount": 41,
+      "priceLevel": null,
+      "phone": null,
+      "hours": null,
+      "image": "https://picsum.photos/seed/restaurant13/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 14,
+      "name": "Mien",
+      "category": "중식",
+      "description": "짬뽕과 탕수육으로 유명한 단골 많은 동네 중식당",
+      "address": "경기 성남시 분당구 서현동 269-2 피아자코코빌딩 2층 204호",
+      "location": {
+        "lat": 37.3844874,
+        "lng": 127.1221639
+      },
+      "rating": 4.1,
+      "reviewCount": 99,
+      "priceLevel": 1,
+      "phone": "031-703-5759",
+      "hours": "매일 11:00-21:00",
+      "image": "https://picsum.photos/seed/restaurant14/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 15,
+      "name": "Manganghong",
+      "category": "중식",
+      "description": "넓은 룸과 홀을 갖춘 단체 모임용 대형 중식당",
+      "address": "경기 성남시 분당구 서현동",
+      "location": {
+        "lat": 37.3862445,
+        "lng": 127.1224077
+      },
+      "rating": 3.8,
+      "reviewCount": 730,
+      "priceLevel": 2,
+      "phone": "031-705-8555",
+      "hours": "매일 11:30-21:30",
+      "image": "https://picsum.photos/seed/restaurant15/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 16,
+      "name": "투파인드피터 서현점",
+      "category": "양식",
+      "description": "리조또와 파스타를 즐길 수 있는 데이트 코스용 양식당",
+      "address": "경기 성남시 분당구 황새울로360번길 26 삼보프라자 4층 401호",
+      "location": {
+        "lat": 37.38581,
+        "lng": 127.1250495
+      },
+      "rating": 4.3,
+      "reviewCount": 25,
+      "priceLevel": null,
+      "phone": "031-778-6263",
+      "hours": "매일 11:00-22:00",
+      "image": "https://picsum.photos/seed/restaurant16/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 17,
+      "name": "파스타테이블",
+      "category": "양식",
+      "description": "매장에서 직접 뽑는 생면 파스타 전문점",
+      "address": "경기 성남시 분당구 분당로53번길 21 2층 207호",
+      "location": {
+        "lat": 37.3846939,
+        "lng": 127.1223654
+      },
+      "rating": 4.6,
+      "reviewCount": 9,
+      "priceLevel": null,
+      "phone": "0502-5550-2093",
+      "hours": "화-일 11:00-21:30 (월요일 휴무)",
+      "image": "https://picsum.photos/seed/restaurant17/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 18,
+      "name": "테이블 서현",
+      "category": "양식",
+      "description": "뇨끼와 스테이크가 인기인 신상 파스타 레스토랑",
+      "address": "경기 성남시 분당구 서현동 254-5 서현프라자 3층",
+      "location": {
+        "lat": 37.3879098,
+        "lng": 127.1228612
+      },
+      "rating": 4.4,
+      "reviewCount": 5,
+      "priceLevel": null,
+      "phone": "010-7790-0426",
+      "hours": "월-토 11:00-21:00 (일요일 휴무)",
+      "image": "https://picsum.photos/seed/restaurant18/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 19,
+      "name": "Izakaya Zanzan Seohyeon station",
+      "category": "이자카야",
+      "description": "일본풍 인테리어의 오마카세·꼬치구이 전문 이자카야",
+      "address": "경기 성남시 분당구 황새울로335번길 8",
+      "location": {
+        "lat": 37.3866787,
+        "lng": 127.1222194
+      },
+      "rating": 4.6,
+      "reviewCount": 243,
+      "priceLevel": null,
+      "phone": "031-703-0877",
+      "hours": "매일 17:00-01:00 (금·토 ~02:00)",
+      "image": "https://picsum.photos/seed/restaurant19/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 20,
+      "name": "스미노카리",
+      "category": "이자카야",
+      "description": "QR코드로 주문하는 성게알·타다키 전문 이자카야",
+      "address": "경기 성남시 분당구 서현동 272-3",
+      "location": {
+        "lat": 37.3854206,
+        "lng": 127.1207878
+      },
+      "rating": 4.2,
+      "reviewCount": 107,
+      "priceLevel": null,
+      "phone": "031-708-1151",
+      "hours": null,
+      "image": "https://picsum.photos/seed/restaurant20/480/320",
+      "isFavorite": false
+    },
+    {
+      "id": 21,
+      "name": "모로미쿠시 서현",
+      "category": "이자카야",
+      "description": "조개탕과 꼬치 메뉴를 갖춘 조용한 분위기의 이자카야",
+      "address": "경기 성남시 분당구 서현1동 260-6",
+      "location": {
+        "lat": 37.3862697,
+        "lng": 127.1224099
+      },
+      "rating": 4,
+      "reviewCount": 90,
+      "priceLevel": null,
+      "phone": "031-8016-9834",
+      "hours": "매일 16:00-02:00 (금·토 ~03:00)",
+      "image": "https://picsum.photos/seed/restaurant21/480/320",
+      "isFavorite": false
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "restaurantId": 1,
+      "author": "분당러버",
+      "rating": 5,
+      "comment": "재방문 의사 100%입니다.",
+      "date": "2026-05-25"
+    },
+    {
+      "id": 2,
+      "restaurantId": 1,
+      "author": "가족외식러",
+      "rating": 4,
+      "comment": "정갈한 반찬과 깊은 국물맛이 인상적이었어요.",
+      "date": "2026-06-26"
+    },
+    {
+      "id": 3,
+      "restaurantId": 1,
+      "author": "성남토박이",
+      "rating": 5,
+      "comment": "집밥 느낌이 나서 자주 찾게 되는 곳이에요.",
+      "date": "2026-04-02"
+    },
+    {
+      "id": 4,
+      "restaurantId": 1,
+      "author": "서현동주민",
+      "rating": 4,
+      "comment": "친절한 응대와 깔끔한 매장이 좋았어요.",
+      "date": "2026-05-18"
+    },
+    {
+      "id": 5,
+      "restaurantId": 2,
+      "author": "로컬맛잘알",
+      "rating": 5,
+      "comment": "혼술하기에도 편안한 공간이었습니다.",
+      "date": "2026-07-03"
+    },
+    {
+      "id": 6,
+      "restaurantId": 2,
+      "author": "데이트코스헌터",
+      "rating": 5,
+      "comment": "안주 종류가 다양하고 술과 잘 어울렸어요.",
+      "date": "2026-02-19"
+    },
+    {
+      "id": 7,
+      "restaurantId": 2,
+      "author": "성남토박이",
+      "rating": 5,
+      "comment": "웨이팅이 있었지만 기다릴 만한 맛이었어요.",
+      "date": "2026-07-06"
+    },
+    {
+      "id": 8,
+      "restaurantId": 3,
+      "author": "성남토박이",
+      "rating": 5,
+      "comment": "가격 대비 양이 푸짐해서 만족스러웠습니다.",
+      "date": "2026-06-18"
+    },
+    {
+      "id": 9,
+      "restaurantId": 3,
+      "author": "로컬맛잘알",
+      "rating": 5,
+      "comment": "친절한 응대와 깔끔한 매장이 좋았어요.",
+      "date": "2026-05-01"
+    },
+    {
+      "id": 10,
+      "restaurantId": 3,
+      "author": "분당러버",
+      "rating": 5,
+      "comment": "정갈한 반찬과 깊은 국물맛이 인상적이었어요.",
+      "date": "2026-01-25"
+    },
+    {
+      "id": 11,
+      "restaurantId": 4,
+      "author": "먹방여행자",
+      "rating": 3,
+      "comment": "가격 대비 양이 푸짐해서 만족스러웠습니다.",
+      "date": "2026-02-24"
+    },
+    {
+      "id": 12,
+      "restaurantId": 4,
+      "author": "분당토박이",
+      "rating": 3,
+      "comment": "정갈한 반찬과 깊은 국물맛이 인상적이었어요.",
+      "date": "2026-02-10"
+    },
+    {
+      "id": 13,
+      "restaurantId": 4,
+      "author": "동네주민",
+      "rating": 4,
+      "comment": "재방문 의사 100%입니다.",
+      "date": "2026-03-13"
+    },
+    {
+      "id": 14,
+      "restaurantId": 5,
+      "author": "혼밥러",
+      "rating": 4,
+      "comment": "신선한 재료와 정갈한 플레이팅이 좋았어요.",
+      "date": "2026-02-21"
+    },
+    {
+      "id": 15,
+      "restaurantId": 5,
+      "author": "야식파",
+      "rating": 5,
+      "comment": "런치 세트 가성비가 훌륭합니다.",
+      "date": "2026-03-06"
+    },
+    {
+      "id": 16,
+      "restaurantId": 5,
+      "author": "분당토박이",
+      "rating": 5,
+      "comment": "면발이 쫄깃하고 국물이 진했어요.",
+      "date": "2026-04-22"
+    },
+    {
+      "id": 17,
+      "restaurantId": 5,
+      "author": "직장인런치",
+      "rating": 5,
+      "comment": "다음에 또 방문하고 싶은 맛이었습니다.",
+      "date": "2026-05-06"
+    },
+    {
+      "id": 18,
+      "restaurantId": 6,
+      "author": "먹방여행자",
+      "rating": 4,
+      "comment": "런치 세트 가성비가 훌륭합니다.",
+      "date": "2026-04-02"
+    },
+    {
+      "id": 19,
+      "restaurantId": 6,
+      "author": "리뷰장인",
+      "rating": 3,
+      "comment": "신선한 재료와 정갈한 플레이팅이 좋았어요.",
+      "date": "2026-01-28"
+    },
+    {
+      "id": 20,
+      "restaurantId": 6,
+      "author": "데이트코스헌터",
+      "rating": 3,
+      "comment": "면발이 쫄깃하고 국물이 진했어요.",
+      "date": "2026-02-26"
+    },
+    {
+      "id": 21,
+      "restaurantId": 7,
+      "author": "혼밥러",
+      "rating": 4,
+      "comment": "좌석이 넓고 오래 머물기 좋은 공간이에요.",
+      "date": "2026-07-03"
+    },
+    {
+      "id": 22,
+      "restaurantId": 7,
+      "author": "직장인런치",
+      "rating": 5,
+      "comment": "친구와 수다 떨기 좋은 카페입니다.",
+      "date": "2026-02-03"
+    },
+    {
+      "id": 23,
+      "restaurantId": 7,
+      "author": "주중점심러",
+      "rating": 5,
+      "comment": "디저트와 커피 모두 만족스러웠습니다.",
+      "date": "2026-01-25"
+    },
+    {
+      "id": 24,
+      "restaurantId": 7,
+      "author": "야식파",
+      "rating": 5,
+      "comment": "인테리어가 예뻐서 사진 찍기 좋아요.",
+      "date": "2026-05-07"
+    },
+    {
+      "id": 25,
+      "restaurantId": 8,
+      "author": "직장인런치",
+      "rating": 4,
+      "comment": "디저트와 커피 모두 만족스러웠습니다.",
+      "date": "2026-05-06"
+    },
+    {
+      "id": 26,
+      "restaurantId": 8,
+      "author": "맛집탐방러",
+      "rating": 4,
+      "comment": "좌석이 넓고 오래 머물기 좋은 공간이에요.",
+      "date": "2026-05-16"
+    },
+    {
+      "id": 27,
+      "restaurantId": 8,
+      "author": "야식파",
+      "rating": 4,
+      "comment": "친구와 수다 떨기 좋은 카페입니다.",
+      "date": "2026-04-09"
+    },
+    {
+      "id": 28,
+      "restaurantId": 8,
+      "author": "산책하는미식가",
+      "rating": 4,
+      "comment": "조용한 분위기라 작업하기에도 좋았어요.",
+      "date": "2026-06-28"
+    },
+    {
+      "id": 29,
+      "restaurantId": 9,
+      "author": "야식파",
+      "rating": 5,
+      "comment": "인테리어가 예뻐서 사진 찍기 좋아요.",
+      "date": "2026-05-08"
+    },
+    {
+      "id": 30,
+      "restaurantId": 9,
+      "author": "가족외식러",
+      "rating": 4,
+      "comment": "디저트와 커피 모두 만족스러웠습니다.",
+      "date": "2026-04-18"
+    },
+    {
+      "id": 31,
+      "restaurantId": 9,
+      "author": "로컬맛잘알",
+      "rating": 4,
+      "comment": "조용한 분위기라 작업하기에도 좋았어요.",
+      "date": "2026-05-20"
+    },
+    {
+      "id": 32,
+      "restaurantId": 10,
+      "author": "서현동주민",
+      "rating": 4,
+      "comment": "반찬 리필이 자유로워서 좋았습니다.",
+      "date": "2026-02-18"
+    },
+    {
+      "id": 33,
+      "restaurantId": 10,
+      "author": "주말탐식가",
+      "rating": 4,
+      "comment": "가격이 조금 있지만 그만한 값어치를 합니다.",
+      "date": "2026-05-12"
+    },
+    {
+      "id": 34,
+      "restaurantId": 10,
+      "author": "분당러버",
+      "rating": 4,
+      "comment": "고기 질이 좋고 직원분이 직접 구워주셨어요.",
+      "date": "2026-07-17"
+    },
+    {
+      "id": 35,
+      "restaurantId": 11,
+      "author": "데이트코스헌터",
+      "rating": 5,
+      "comment": "가격이 조금 있지만 그만한 값어치를 합니다.",
+      "date": "2026-02-10"
+    },
+    {
+      "id": 36,
+      "restaurantId": 11,
+      "author": "로컬맛잘알",
+      "rating": 3,
+      "comment": "회식 장소로 강추합니다.",
+      "date": "2026-03-24"
+    },
+    {
+      "id": 37,
+      "restaurantId": 11,
+      "author": "직장인런치",
+      "rating": 5,
+      "comment": "고기 질이 좋고 직원분이 직접 구워주셨어요.",
+      "date": "2026-04-09"
+    },
+    {
+      "id": 38,
+      "restaurantId": 12,
+      "author": "가족외식러",
+      "rating": 5,
+      "comment": "룸이 있어서 프라이빗하게 식사할 수 있었어요.",
+      "date": "2026-03-28"
+    },
+    {
+      "id": 39,
+      "restaurantId": 12,
+      "author": "산책하는미식가",
+      "rating": 5,
+      "comment": "고기 질이 좋고 직원분이 직접 구워주셨어요.",
+      "date": "2026-06-20"
+    },
+    {
+      "id": 40,
+      "restaurantId": 12,
+      "author": "먹방여행자",
+      "rating": 5,
+      "comment": "가격이 조금 있지만 그만한 값어치를 합니다.",
+      "date": "2026-02-15"
+    },
+    {
+      "id": 41,
+      "restaurantId": 12,
+      "author": "주중점심러",
+      "rating": 4,
+      "comment": "회식 장소로 강추합니다.",
+      "date": "2026-06-22"
+    },
+    {
+      "id": 42,
+      "restaurantId": 13,
+      "author": "분당토박이",
+      "rating": 3,
+      "comment": "짬뽕 국물이 얼큰하고 시원했어요.",
+      "date": "2026-06-30"
+    },
+    {
+      "id": 43,
+      "restaurantId": 13,
+      "author": "분당러버",
+      "rating": 4,
+      "comment": "동네 단골 중식당으로 추천해요.",
+      "date": "2026-02-11"
+    },
+    {
+      "id": 44,
+      "restaurantId": 13,
+      "author": "로컬맛잘알",
+      "rating": 4,
+      "comment": "배달도 빠르고 맛도 변함없어요.",
+      "date": "2026-06-10"
+    },
+    {
+      "id": 45,
+      "restaurantId": 14,
+      "author": "직장인런치",
+      "rating": 4,
+      "comment": "짬뽕 국물이 얼큰하고 시원했어요.",
+      "date": "2026-04-30"
+    },
+    {
+      "id": 46,
+      "restaurantId": 14,
+      "author": "산책하는미식가",
+      "rating": 3,
+      "comment": "배달도 빠르고 맛도 변함없어요.",
+      "date": "2026-06-12"
+    },
+    {
+      "id": 47,
+      "restaurantId": 14,
+      "author": "주중점심러",
+      "rating": 3,
+      "comment": "탕수육 튀김이 바삭바삭했습니다.",
+      "date": "2026-04-22"
+    },
+    {
+      "id": 48,
+      "restaurantId": 14,
+      "author": "먹방여행자",
+      "rating": 4,
+      "comment": "동네 단골 중식당으로 추천해요.",
+      "date": "2026-03-18"
+    },
+    {
+      "id": 49,
+      "restaurantId": 15,
+      "author": "리뷰장인",
+      "rating": 5,
+      "comment": "가족 모임 장소로 좋았습니다.",
+      "date": "2026-07-12"
+    },
+    {
+      "id": 50,
+      "restaurantId": 15,
+      "author": "맛집탐방러",
+      "rating": 5,
+      "comment": "동네 단골 중식당으로 추천해요.",
+      "date": "2026-05-03"
+    },
+    {
+      "id": 51,
+      "restaurantId": 15,
+      "author": "동네주민",
+      "rating": 3,
+      "comment": "짬뽕 국물이 얼큰하고 시원했어요.",
+      "date": "2026-05-13"
+    },
+    {
+      "id": 52,
+      "restaurantId": 16,
+      "author": "주말탐식가",
+      "rating": 4,
+      "comment": "와인과 함께 즐기기 좋은 곳입니다.",
+      "date": "2026-04-07"
+    },
+    {
+      "id": 53,
+      "restaurantId": 16,
+      "author": "직장인런치",
+      "rating": 4,
+      "comment": "분위기 좋아서 기념일에 방문하기 좋아요.",
+      "date": "2026-05-28"
+    },
+    {
+      "id": 54,
+      "restaurantId": 16,
+      "author": "출퇴근길손님",
+      "rating": 5,
+      "comment": "브런치로도 손색없는 메뉴 구성이었습니다.",
+      "date": "2026-03-14"
+    },
+    {
+      "id": 55,
+      "restaurantId": 16,
+      "author": "리뷰장인",
+      "rating": 4,
+      "comment": "생면 파스타 식감이 훌륭했어요.",
+      "date": "2026-07-11"
+    },
+    {
+      "id": 56,
+      "restaurantId": 17,
+      "author": "미식가K",
+      "rating": 5,
+      "comment": "분위기 좋아서 기념일에 방문하기 좋아요.",
+      "date": "2026-04-16"
+    },
+    {
+      "id": 57,
+      "restaurantId": 17,
+      "author": "주중점심러",
+      "rating": 4,
+      "comment": "와인과 함께 즐기기 좋은 곳입니다.",
+      "date": "2026-05-23"
+    },
+    {
+      "id": 58,
+      "restaurantId": 17,
+      "author": "산책하는미식가",
+      "rating": 4,
+      "comment": "브런치로도 손색없는 메뉴 구성이었습니다.",
+      "date": "2026-05-21"
+    },
+    {
+      "id": 59,
+      "restaurantId": 18,
+      "author": "동네주민",
+      "rating": 3,
+      "comment": "브런치로도 손색없는 메뉴 구성이었습니다.",
+      "date": "2026-01-30"
+    },
+    {
+      "id": 60,
+      "restaurantId": 18,
+      "author": "혼밥러",
+      "rating": 3,
+      "comment": "생면 파스타 식감이 훌륭했어요.",
+      "date": "2026-04-10"
+    },
+    {
+      "id": 61,
+      "restaurantId": 18,
+      "author": "산책하는미식가",
+      "rating": 4,
+      "comment": "분위기 좋아서 기념일에 방문하기 좋아요.",
+      "date": "2026-03-18"
+    },
+    {
+      "id": 62,
+      "restaurantId": 18,
+      "author": "주중점심러",
+      "rating": 4,
+      "comment": "와인과 함께 즐기기 좋은 곳입니다.",
+      "date": "2026-03-29"
+    },
+    {
+      "id": 63,
+      "restaurantId": 19,
+      "author": "서현동주민",
+      "rating": 4,
+      "comment": "안주 종류가 다양하고 술과 잘 어울렸어요.",
+      "date": "2026-06-10"
+    },
+    {
+      "id": 64,
+      "restaurantId": 19,
+      "author": "가족외식러",
+      "rating": 5,
+      "comment": "분위기가 좋아서 데이트 코스로 추천합니다.",
+      "date": "2026-03-21"
+    },
+    {
+      "id": 65,
+      "restaurantId": 19,
+      "author": "야식파",
+      "rating": 5,
+      "comment": "혼술하기에도 편안한 공간이었습니다.",
+      "date": "2026-02-12"
+    },
+    {
+      "id": 66,
+      "restaurantId": 19,
+      "author": "분당토박이",
+      "rating": 5,
+      "comment": "직원분들이 친절하고 서비스가 좋았어요.",
+      "date": "2026-03-19"
+    },
+    {
+      "id": 67,
+      "restaurantId": 20,
+      "author": "분당러버",
+      "rating": 5,
+      "comment": "안주 종류가 다양하고 술과 잘 어울렸어요.",
+      "date": "2026-06-13"
+    },
+    {
+      "id": 68,
+      "restaurantId": 20,
+      "author": "로컬맛잘알",
+      "rating": 4,
+      "comment": "혼술하기에도 편안한 공간이었습니다.",
+      "date": "2026-05-30"
+    },
+    {
+      "id": 69,
+      "restaurantId": 20,
+      "author": "분당토박이",
+      "rating": 4,
+      "comment": "직원분들이 친절하고 서비스가 좋았어요.",
+      "date": "2026-07-11"
+    },
+    {
+      "id": 70,
+      "restaurantId": 20,
+      "author": "산책하는미식가",
+      "rating": 4,
+      "comment": "웨이팅이 있었지만 기다릴 만한 맛이었어요.",
+      "date": "2026-05-25"
+    },
+    {
+      "id": 71,
+      "restaurantId": 21,
+      "author": "리뷰장인",
+      "rating": 4,
+      "comment": "혼술하기에도 편안한 공간이었습니다.",
+      "date": "2026-03-23"
+    },
+    {
+      "id": 72,
+      "restaurantId": 21,
+      "author": "출퇴근길손님",
+      "rating": 5,
+      "comment": "웨이팅이 있었지만 기다릴 만한 맛이었어요.",
+      "date": "2026-03-08"
+    },
+    {
+      "id": 73,
+      "restaurantId": 21,
+      "author": "혼밥러",
+      "rating": 4,
+      "comment": "안주 종류가 다양하고 술과 잘 어울렸어요.",
+      "date": "2026-03-12"
+    },
+    {
+      "id": 74,
+      "restaurantId": 21,
+      "author": "미식가K",
+      "rating": 4,
+      "comment": "직원분들이 친절하고 서비스가 좋았어요.",
+      "date": "2026-03-04"
+    }
+  ]
+}
