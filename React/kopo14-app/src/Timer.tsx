@@ -22,7 +22,7 @@ function Timer() {
       <button
         onClick={() => {
           setSeconds(0);
-          setRunning(!running);
+          setRunning(false);
         }}
       >
         초기화

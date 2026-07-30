@@ -16,6 +16,8 @@ HTML → CSS → JavaScript 프론트엔드 기초 과정(총 13일)의 강의 �
 | 8강 | [비동기 · fetch](notes/08_비동기fetch_정리.md) | localStorage · async/await · fetch CRUD · 정규식 · 모달 · Swiper |
 | 9강 | [React 기초](notes/09_React기초_정리.md) | 컴포넌트 · JSX · props · useState · Vite · TypeScript |
 | 10강 | [React 심화](notes/10_React심화_정리.md) | 조건부/리스트 렌더링 · useEffect · cleanup · CRUD · React Router |
+| 11강 | [React Native 기초](notes/11_ReactNative기초_정리.md) | 환경 세팅(JDK·Android Studio·AVD) · View · Text · Image · ScrollView · StyleSheet |
+| 12강 | [React Native 스타일링 & 레이아웃](notes/12_ReactNative스타일링레이아웃_정리.md) | Flexbox(column 기본) · TextInput · TouchableOpacity · FlatList · useRef · fetch(10.0.2.2) |
 
 ## 🛠 일자별 실습 (DAY1 ~ DAY7)
 
@@ -69,6 +71,17 @@ HTML → CSS → JavaScript 프론트엔드 기초 과정(총 13일)의 강의 �
 피그마 시안(호텔예약 데스크톱/모바일) 기반 산출물 프로젝트. 메인(HOME) + 예약안내(요금표) + 실시간예약(객실 선택 → 객실별 달력 예약 → 예약자 등록 폼 → POST /reservation)의 **예약 흐름 전체를 바닐라 JS로 완성**했습니다. 직접 구현한 달력(시즌·주중/주말/휴일 요금, 예약된 날짜 차단, 5박 제한), 웹 컴포넌트 헤더/푸터, localStorage 페이지 간 상태 전달, 모바일 반응형까지 포함합니다.
 
 👉 구조도·페이지 흐름·핵심 구현 설명: [HOTELPROJECT/README.md](HOTELPROJECT/README.md)
+
+## 📱 React Native 실습 (React-native/kopo14MyApp)
+
+11강부터 웹에서 모바일 앱으로 넘어갑니다. `npx @react-native-community/cli init`으로 만든 RN + TypeScript 프로젝트로, 안드로이드 에뮬레이터(AVD)에서 실행합니다.
+
+- **환경 세팅** — JDK 17(Temurin) · Android Studio + SDK · AVD 에뮬레이터 · `JAVA_HOME`·`ANDROID_HOME` 환경변수
+- **App.tsx** — 기본 화면을 지우고 `View` + `Text` + `StyleSheet`로 첫 화면 직접 수정
+
+실행: 에뮬레이터를 **먼저** 켠 뒤 `yarn android` (이후 코드 수정은 `yarn start`로 Metro만)
+
+> 11강 진도까지 반영된 스냅샷입니다. 교안의 실습①(프로필 화면)·실습②(나만의 화면)와 12강 내용은 [강의 노트](notes/12_ReactNative스타일링레이아웃_정리.md)에 정리만 되어 있고 코드는 아직 작성 전입니다.
 
 ## ⭐ 하이라이트
 
